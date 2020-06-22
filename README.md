@@ -4,7 +4,7 @@ Create a simple calendar application that allows the user to save events for eac
 
 ## Links
 
-Repo: 
+Repo: https://github.com/MCui1997/Day-Planner
 
 Github:
 
