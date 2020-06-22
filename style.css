@@ -14,10 +14,15 @@ textarea{
   width: 100%;
 }
 
+#currentDay{
+
+  font-size: 300%;
+  
+}
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-color: black;
+  color: white;
   border-radius: 0;
   border-bottom: 10px solid black;
 }

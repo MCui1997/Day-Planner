@@ -4,9 +4,11 @@
 // var currentTime = "PM";
 // var hourTime = ["10"];
 
+var currentDay = moment().format('LLLL');
 var currentTime = moment().format('LT');
 var hourTime = currentTime.split(":");
 
+$("#currentDay").html(currentDay);
 
 
 getCurrentTime();
