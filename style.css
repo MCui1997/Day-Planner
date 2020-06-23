@@ -43,7 +43,9 @@ textarea{
 }
 
 .row {
-  height: 100px;
+
+
+  height: 75px;
   border-top: 1px solid #41B3A3;
 }
 
@@ -77,7 +79,7 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-  width: 10%;
+  width: 15%;
 }
 
 .saveBtn:hover{
