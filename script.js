@@ -1,21 +1,30 @@
 // function to get the current time of the day, so we can change background colors of time blocks
 //TESTING PURPOSES
-
 // var currentTime = "PM";
 // var hourTime = ["10"];
 
+//Initialize variables needed
 var currentDay = moment().format('LLLL');
 var currentTime = moment().format('LT');
 var hourTime = currentTime.split(":");
 
+//Set the current day to show 
 $("#currentDay").text(currentDay);
 
-
+//Call functions to get time
 getCurrentTime();
+getStorage();
+
+//Function to get all items from local storage at the start
+function getStorage(){
+    for(var i =0; i<9; i++){
+    
+        $("textarea#text"+i).val(localStorage.getItem("description"+i));
+    }
+}
 
 //MAIN FUNCTION TO GET THE TIME AND THEN ADAPT COLORS OF THE CALENDAR ACCORDINGLY
 function getCurrentTime(){
-
 //If the time is AM
 if (currentTime.includes("AM")){
 
@@ -36,7 +45,6 @@ if (currentTime.includes("AM")){
     }
 
    
-
 }
 //If the time is PM
 if (currentTime.includes("PM")){
@@ -63,9 +71,34 @@ if (currentTime.includes("PM")){
             $("#"+i+"PM").removeClass("future");
             $("#"+i+"PM").addClass("past");
         }
-
     }
-
+}
 }
 
-}
+
+
+$("#1button").on("click", function() {
+   
+    event.preventDefault(); 
+    var buttonID = $("#1button").attr("id");
+    var textID = parseInt(buttonID);
+    var message = $("textarea#text"+textID).val();
+    localStorage.setItem("description"+textID, message);
+    console.log(message);
+
+    
+  });
+
+
+
+  $("#2button").on("click", function() {
+   
+    event.preventDefault(); 
+    var buttonID = $("#2button").attr("id");
+    var textID = parseInt(buttonID);
+    var message = $("textarea#text"+textID).val();
+    localStorage.setItem("description"+textID,"message");
+    console.log(message);
+
+    
+  });
