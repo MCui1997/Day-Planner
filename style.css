@@ -27,6 +27,14 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+#resetBtn{
+  
+  font-size: 150%;
+  background-color: #06AED5;
+  color: white;
+
+}
+
 .time-block{
   vertical-align: middle;
 }

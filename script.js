@@ -77,6 +77,14 @@ if (currentTime.includes("PM")){
 
 //BUTTONS//////////////////////////////////////////////////////////////
 
+$("#resetBtn").on("click", function() {
+   
+   event.preventDefault(); 
+   localStorage.clear();
+   getStorage();
+    
+});
+
 $("#1button").on("click", function() {
     event.preventDefault(); 
     //Get id of button
