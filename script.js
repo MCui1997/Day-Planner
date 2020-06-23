@@ -8,7 +8,7 @@ var currentDay = moment().format('LLLL');
 var currentTime = moment().format('LT');
 var hourTime = currentTime.split(":");
 
-$("#currentDay").html(currentDay);
+$("#currentDay").text(currentDay);
 
 
 getCurrentTime();
