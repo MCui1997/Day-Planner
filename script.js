@@ -75,7 +75,7 @@ if (currentTime.includes("PM")){
 }
 }
 
-//BUTTONS//////////////////////////////////////////////////////////////
+//BUTTONS////
 
 $("#resetBtn").on("click", function() {
    
@@ -85,10 +85,10 @@ $("#resetBtn").on("click", function() {
     
 });
 
-$("#1button").on("click", function() {
+$(".saveBtn").on("click", function() {
     event.preventDefault(); 
     //Get id of button
-    var buttonID = $("#1button").attr("id");
+    var buttonID = this.id;
     // Get the number to match up with textarea
     var textID = parseInt(buttonID);
     //Get the textarea message
@@ -97,74 +97,4 @@ $("#1button").on("click", function() {
     localStorage.setItem("description"+textID, message);
   });
 
-  $("#2button").on("click", function() {
-   
-    event.preventDefault(); 
-    var buttonID = $("#2button").attr("id");
-    var textID = parseInt(buttonID);
-    var message = $("textarea#text"+textID).val();
-    localStorage.setItem("description"+textID, message);
-  });
-
-  $("#3button").on("click", function() {
-   
-    event.preventDefault(); 
-    var buttonID = $("#3button").attr("id");
-    var textID = parseInt(buttonID);
-    var message = $("textarea#text"+textID).val();
-    localStorage.setItem("description"+textID, message);
-  });
-
-  $("#4button").on("click", function() {
-   
-    event.preventDefault(); 
-    var buttonID = $("#4button").attr("id");
-    var textID = parseInt(buttonID);
-    var message = $("textarea#text"+textID).val();
-    localStorage.setItem("description"+textID, message);
-  });
-
-  $("#5button").on("click", function() {
-   
-    event.preventDefault(); 
-    var buttonID = $("#5button").attr("id");
-    var textID = parseInt(buttonID);
-    var message = $("textarea#text"+textID).val();
-    localStorage.setItem("description"+textID, message);
-  });
-
-  $("#6button").on("click", function() {
-   
-    event.preventDefault(); 
-    var buttonID = $("#6button").attr("id");
-    var textID = parseInt(buttonID);
-    var message = $("textarea#text"+textID).val();
-    localStorage.setItem("description"+textID, message);
-  });
-
-  $("#7button").on("click", function() {
-   
-    event.preventDefault(); 
-    var buttonID = $("#7button").attr("id");
-    var textID = parseInt(buttonID);
-    var message = $("textarea#text"+textID).val();
-    localStorage.setItem("description"+textID, message);
-  });
-
-  $("#8button").on("click", function() {
-   
-    event.preventDefault(); 
-    var buttonID = $("#8button").attr("id");
-    var textID = parseInt(buttonID);
-    var message = $("textarea#text"+textID).val();
-    localStorage.setItem("description"+textID, message);
-  });
-
-  $("#9button").on("click", function() {
-   
-    event.preventDefault(); 
-    var buttonID = $("#9button").attr("id");
-    var textID = parseInt(buttonID);
-    var message = $("textarea#text"+textID).val();
-    localStorage.setItem("description"+textID, message);
-  });
+  
