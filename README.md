@@ -35,3 +35,7 @@ THEN the saved events persist
 ```
 
 ## Screenshots
+
+![Alt text](/screenshots/pic1.PNG "Main")
+
+![Alt text](/screenshots/pic2.PNG "Second")
