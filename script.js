@@ -17,7 +17,7 @@ getStorage();
 
 //Function to get all items from local storage at the start
 function getStorage(){
-    for(var i =0; i<9; i++){
+    for(var i =0; i<=9; i++){
     
         $("textarea#text"+i).val(localStorage.getItem("description"+i));
     }
