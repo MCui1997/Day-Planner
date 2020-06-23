@@ -1,9 +1,9 @@
 // function to get the current time of the day, so we can change background colors of time blocks
 //TESTING PURPOSES
-// var currentTime = "PM";
-// var hourTime = ["10"];
+// var currentTime = "AM";
+// var hourTime = ["11"];
 
-//Initialize variables needed
+// //Initialize variables needed
 var currentDay = moment().format('LLLL');
 var currentTime = moment().format('LT');
 var hourTime = currentTime.split(":");
